@@ -43,5 +43,6 @@ This project simulates a one-innings hand cricket match where the user tries to 
 5. Click **Play Again** to restart.
 
 ---
+## 🌐 Live Demo
 
-## 📂 Project Structure
+🔗 https://handcricketgame-three.vercel.app/
