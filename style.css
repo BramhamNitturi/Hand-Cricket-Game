@@ -1,9 +1,13 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   background-color: #f0a3a3;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 h1 {
@@ -11,121 +15,122 @@ h1 {
   color: aliceblue;
   font-size: 2rem;
   height: 60px;
-  text-align: center;
   line-height: 60px;
 }
-p {
-  font-size: 50px;
-}
+
 .winner {
-  height: 700px;
+  min-height: 100vh;
   background-color: #0b2b40;
-  padding: 5px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .hide {
   display: none;
 }
 
 #winner-msg {
-  display: block;
-  height: 40px;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 250px;
+  font-size: 28px;
   margin-bottom: 20px;
-  border-radius: 10px;
-  line-height: 40px;
   color: #f0a3a3;
 }
 
 button {
   background-color: #f0a3a3;
-  height: 50px;
-  width: 100px;
-  border-radius: 10px;
+  height: 45px;
+  width: 120px;
+  border-radius: 8px;
+  border: none;
   color: rgb(3, 11, 38);
   font-weight: bold;
 }
+
 button:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .scores {
-  height: 300px;
-  width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 350px;
-}
-.score {
-  height: 200px;
-  width: 200px;
-  font-size: 20px;
-  color: rgb(3, 5, 16);
-}
-#user {
-  text-align: start;
-  font-size: 30px;
-  padding-top: 50px;
-}
-#comp {
-  text-align: end;
-  font-size: 30px;
-  padding-top: 50px;
-}
-#comp-total-score,#user-total-score {
-  font-size: 30px;
-  color: #313E50;
-}
-#user-enter-score,#comp-enter-score {
-  font-size: 70px;
-  color: #313E50;
-}
-#user-enter-score {
-  padding-left: 25px;
-}
-#comp-enter-score {
-  padding-right: 30px;
+  gap: 80px;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 
-.vs {
-  margin-top: 75px;
+.score {
+  text-align: center;
+}
+
+#user-total-score,
+#comp-total-score {
+  font-size: 28px;
+  color: #313e50;
+}
+
+#user-enter-score,
+#comp-enter-score {
+  font-size: 60px;
+  color: #313e50;
 }
 
 .msg-container {
-  height: 30px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: -20px;
   gap: 8px;
+  font-size: 20px;
 }
-
-
 
 .choices {
-  height: 300px;
-  width: 1000px;
-  color: white;
+  margin-top: 40px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 300px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 20px;
+}
 
-}
 .choice {
-  height: 120px;
-  width:120px;
-  background-color: #313E50;
+  height: 100px;
+  width: 100px;
+  background-color: #313e50;
   border-radius: 50%;
-  text-align: center;
-  line-height: 120px;
-  font-size: 30px;
+  color: white;
+  line-height: 100px;
+  font-size: 28px;
+  transition: 0.3s;
 }
+
 .choice:hover {
   cursor: pointer;
   border: 3px solid #0b2b40;
+}
+
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #user-enter-score,
+  #comp-enter-score {
+    font-size: 40px;
+  }
+
+  .choice {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    font-size: 20px;
+  }
+
+  .scores {
+    gap: 40px;
+  }
+
 }
