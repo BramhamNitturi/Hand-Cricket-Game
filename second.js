@@ -41,7 +41,7 @@ const resetGame = () => {
 };
 
 
-btn.addEventListener("click", resetGame);   // ✅ FIXED
+btn.addEventListener("click", resetGame);   
 
 const showWinner = () => {
   winnerShow.classList.remove("hide");
@@ -85,4 +85,5 @@ choices.forEach(choice => {
   choice.addEventListener("click", () => {
     playGame(choice);
   });
+
 });
