@@ -22,21 +22,17 @@ const compMove = () => {
 
 
 const resetGame = () => {
-  // Reset scores
   userScore = 0;
   balls = 30;
 
-  // Generate new computer target
   compScore = Math.floor(Math.random() * 100);
 
-  // Reset UI
   userTotalScore.innerText = 0;
   compTotalScore.innerText = compScore;
   userEnterScore.innerText = 0;
   compEnterScore.innerText = 0;
   ballsRemaining.innerText = 30;
 
-  // Hide winner section
   winnerShow.classList.add("hide");
 };
 
@@ -87,3 +83,4 @@ choices.forEach(choice => {
   });
 
 });
+
