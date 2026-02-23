@@ -6,18 +6,18 @@ This project simulates a one-innings hand cricket match where the user tries to 
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🎯 Random target generated for the computer
-- 🏏 30 balls per match
-- 💥 Wicket logic (if user run = computer run)
-- 🏆 Win / Lose / Draw result display
-- 🔄 Play Again functionality
-- 🎨 Clean desktop UI design
+-  Random target generated for the computer
+-  30 balls per match
+-  Wicket logic (if user run = computer run)
+-  Win / Lose / Draw result display
+-  Play Again functionality
+-  Clean desktop UI design
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - HTML5
 - CSS3 (Flexbox for layout)
@@ -25,7 +25,7 @@ This project simulates a one-innings hand cricket match where the user tries to 
 
 ---
 
-## 📷 Game Preview
+##  Game Preview
 
 > User selects a run (0, 1, 2, 3, 4, 6)  
 > Computer randomly selects a run  
@@ -34,7 +34,7 @@ This project simulates a one-innings hand cricket match where the user tries to 
 
 ---
 
-## 🎮 How to Play
+##  How to Play
 
 1. Click on any run (0,1,2,3,4,6).
 2. Computer will generate a random run.
